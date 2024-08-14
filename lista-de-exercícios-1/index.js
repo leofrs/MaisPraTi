@@ -1,3 +1,5 @@
+var prompt = require("prompt-sync")();
+
 //Exercício 1
 /* const parOuImpar = (numero) => {
   if (numero <= 0)
@@ -30,3 +32,45 @@ parOuImpar(0); */
   }
 };
 classificaIdade("José"); */
+
+//Exercício 3
+/* const classificaNota = (nota) => {
+  if (nota >= 0 && nota <= 4) {
+    console.log(`A nota: ${nota}, está classificada como Reprovado`);
+  } else if (nota >= 5 && nota < 7) {
+    console.log(`A nota: ${nota}, está classificada como Recuperação`);
+  } else {
+    console.log(`A nota: ${nota}, está classificada como Aprovado`);
+  }
+};
+
+classificaNota(8); */
+
+//Exercício 4
+/* const lanchonete = () => {
+  prompt(
+    "Seja bem vindo a nossa lanchonete.\nEscolha entre às 3 opções abaixo qual salgado você deseja.\n1 - Fatia : torta de frango, 2 - Panqueca: Panqueca de frango, 3 - Coxinha: Coxinha de Frango.\nPara selecionar a opção desejada basta inserir o número, exemplo: 1, 2 ou 3.\nPressione ENTER para continuar!"
+  );
+  const valor = Number(prompt("Insira seu valor aqui ->  "));
+  switch (valor) {
+    case 1:
+      console.log(
+        "Fatia: Torta de frango selecionada. Seu pedido já está sendo processado"
+      );
+      break;
+    case 2:
+      console.log(
+        "Panqueca: Panqueca de frango selecionada. Seu pedido já está sendo processado"
+      );
+      break;
+    case 3:
+      console.log(
+        "Coxinha: Coxinha de frango selecionada. Seu pedido já está sendo processado"
+      );
+
+    default:
+      console.log("Insira um valor entre 1 e 3. Obrigado!");
+      break;
+  }
+};
+lanchonete(); */
