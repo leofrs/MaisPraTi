@@ -74,3 +74,46 @@ classificaNota(8); */
   }
 };
 lanchonete(); */
+
+//Exercício 5
+/* const calcularImc = (peso, altura) => {
+  const imc = Number(peso / (altura * altura)).toFixed(4);
+
+  if (imc < 0.0016) {
+    console.log("Magreza grau III segundo a OMS");
+  } else if (imc >= 0.0016 && imc < 0.0017) {
+    console.log("Magreza grau II segundo a OMS");
+  } else if (imc >= 0.0017 && imc < 0.0018) {
+    console.log("Magreza grau I segundo a OMS");
+  } else if (imc >= 0.0018 && imc <= 0.0024) {
+    console.log("Adequado segundo a OMS");
+  } else if (imc >= 0.0025 && imc <= 0.0029) {
+    console.log("Pré-Obeso segundo a OMS");
+  } else if (imc >= 0.003 && imc <= 0.0034) {
+    console.log("Obesidade Grau I segundo a OMS");
+  } else if (imc >= 0.0035 && imc <= 0.0039) {
+    console.log("Obesidade Grau II segundo a OMS");
+  } else {
+    console.log("Obesidade Grau III segundo a OMS");
+  }
+}; 
+calcularImc(100, 180);
+*/
+
+//Exercício 6
+/* const triangulo = (lado1, lado2, lado3) => {
+  if (lado1 + lado2 > lado3 || lado1 + lado3 > lado2 || lado2 + lado3 > lado1) {
+    return tipo(lado1, lado2, lado3);
+  }
+  function tipo(lado1, lado2, lado3) {
+    if (lado1 === lado2 && lado2 === lado3) {
+      return console.log("Equilátero");
+    } else if (lado1 === lado2 || lado2 === lado3 || lado1 === lado3) {
+      return console.log("Isósceles");
+    } else {
+      return console.log("Escaleno");
+    }
+  }
+};
+
+triangulo(5, 3, 3); */
