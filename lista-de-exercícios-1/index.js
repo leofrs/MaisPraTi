@@ -117,3 +117,54 @@ calcularImc(100, 180);
 };
 
 triangulo(5, 3, 3); */
+
+//Exercício 7
+/* const numeroMacas = (quantidade) => {
+  const umaDuziaPreco = 0.25;
+  const menosQueUmaDuziaPreco = 0.3;
+
+  if (quantidade < 6) {
+    console.log(
+      `A quantidade ${quantidade}, fica por R$: ${
+        quantidade * menosQueUmaDuziaPreco
+      }`
+    );
+  } else {
+    console.log(
+      `A quantidade ${quantidade}, fica por R$: ${quantidade * umaDuziaPreco}`
+    );
+  }
+};
+numeroMacas(4); */
+
+//Exercício 8
+/* const crescenteNumber = (val1, val2) => {
+  if (val1 !== val2) {
+    if (val1 < val2) {
+      console.log(`Ordem Crescente: ${val1} < ${val2}`);
+    } else {
+      console.log(`Ordem Crescente: ${val2} < ${val1}`);
+    }
+  } else {
+    console.log("Insira dois valores diferentes");
+  }
+};
+crescenteNumber(1, 1); */
+
+//Exercício 9
+/* const contagemRegressiva = () => {
+  console.log("Contagem regressiva iniciada");
+
+  for (let i = 10; i >= 1; i--) {
+    console.log(i);
+  }
+};
+contagemRegressiva(); */
+
+//Exercício 10
+/* const numeroInteiro = (numero) => {
+  for (let i = 1; i <= 10; i++) {
+    console.log(`Número: ${numero}, exibido ${i} ${i === 1 ? "vez" : "vezes"}`);
+  }
+};
+numeroInteiro(2); */
