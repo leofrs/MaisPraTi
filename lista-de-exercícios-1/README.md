@@ -35,8 +35,7 @@ Triângulo eqüilátero: possui todos os lados iguais (A=B e B=C)
 
 10. Escreva um algoritmo para ler um número inteiro e escrevê-lo na tela 10 vezes.
 
-11. Escreva um programa que solicita ao usuário 5 números e calcula a soma total
-    utilizando um loop for.
+11. Escreva um programa que solicita ao usuário 5 números e calcula a soma total utilizando um loop for.
 
 12. Crie um programa que exibe a tabuada de um número fornecido pelo usuário (de 1 à 10) utilizando um loop for.
 

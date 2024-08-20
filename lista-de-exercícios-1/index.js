@@ -168,3 +168,26 @@ contagemRegressiva(); */
   }
 };
 numeroInteiro(2); */
+
+//Exercício 11
+/* const somarCincoNumeros = () => {
+  let soma = 0;
+  for (let i = 1; i <= 5; i++) {
+    let numero = Number(prompt(`Insira o ${i}° número`));
+    console.log(`O resultado na ${i}° soma é: ` + (soma = numero + soma));
+  }
+};
+somarCincoNumeros(); */
+
+//Exercício 12
+/* const tabuada = () => {
+  let numero = Number(prompt(`Insira um número: `));
+  let soma = 0;
+  for (let i = 1; i <= 10; i++) {
+    console.log(
+      `O resultado da multiplicação de ${numero} X ${i} é: ` +
+        (soma = numero * i)
+    );
+  }
+};
+tabuada(); */
