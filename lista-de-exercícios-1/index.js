@@ -191,3 +191,48 @@ somarCincoNumeros(); */
   }
 };
 tabuada(); */
+
+//Exercício 13
+/* const mediaAritmetica = () => {
+  let soma = 0;
+  let contagem = 0;
+  let media = 0;
+
+  while (true) {
+    numero = parseFloat(
+      prompt("Coloque um número decimal (ou Coloque 0 para finalizar):")
+    );
+
+    if (numero === 0) break;
+
+    soma += numero;
+    contagem++;
+  }
+
+  if (contagem > 0) {
+    media = soma / contagem;
+  } else {
+    media = 0;
+  }
+
+  console.log(`A média dos números decimais inseridos é: ${media}`);
+};
+mediaAritmetica(); */
+
+//Exercício 14
+/* const fatorial = () => {
+  let numero = Number(
+    prompt("Insira um número para calcular o seu fatorial: ")
+  );
+
+  if (numero < 0) return undefined;
+
+  let fatorial = 1;
+
+  for (let i = 1; i <= numero; i++) {
+    fatorial = fatorial * i;
+  }
+  console.log(`O fatorial do número ${numero} é: ${fatorial}`);
+};
+fatorial();
+ */
