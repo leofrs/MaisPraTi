@@ -10,7 +10,8 @@ var prompt = require("prompt-sync")();
   if (numero % 2 === 0) return console.log(`O numero ${numero} é par`);
   else return console.log(`O numero ${numero} não é par`);
 };
-parOuImpar(0); */
+parOuImpar(0); 
+*/
 
 //Exercício 2
 /* const classificaIdade = (idade) => {
@@ -43,7 +44,6 @@ classificaIdade("José"); */
     console.log(`A nota: ${nota}, está classificada como Aprovado`);
   }
 };
-
 classificaNota(8); */
 
 //Exercício 4
@@ -115,7 +115,6 @@ calcularImc(100, 180);
     }
   }
 };
-
 triangulo(5, 3, 3); */
 
 //Exercício 7
@@ -236,3 +235,19 @@ mediaAritmetica(); */
 };
 fatorial();
  */
+
+//Exercício 15
+/* const sequenciaFibo = () => {
+  let n1 = 0;
+  let n2 = 1;
+  let proximoNumero;
+
+  for (let i = 1; i <= 10; i++) {
+    console.log(n1);
+
+    proximoNumero = n1 + n2;
+    n1 = n2;
+    n2 = proximoNumero;
+  }
+};
+sequenciaFibo(); */
