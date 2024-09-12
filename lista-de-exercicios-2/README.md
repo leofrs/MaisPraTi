@@ -16,10 +16,10 @@ Manipulação de Objetos
    valor seja maior que um valor específico. Use for in para filtrar as
    propriedades.
 
-Manipulação de Arrays de Objetos com for of 4. Iterando Sobre Arrays de Objetos
-○ Objetivo: Crie um array de objetos pessoas, onde cada objeto representa
-uma pessoa com nome, idade, e cidade. Use for of para exibir as
-informações de cada pessoa no console.
+4. Manipulação de Arrays de Objetos com for of 4. Iterando Sobre Arrays de Objetos
+   ○ Objetivo: Crie um array de objetos pessoas, onde cada objeto representa
+   uma pessoa com nome, idade, e cidade. Use for of para exibir as
+   informações de cada pessoa no console.
 
 5. Calculando Valores em Arrays de Objetos
    ○ Objetivo: Crie um array de objetos alunos, cada um com propriedades
