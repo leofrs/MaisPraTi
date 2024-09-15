@@ -32,10 +32,10 @@ Manipulação de Objetos
    e exibir apenas os funcionários cujo salário seja maior que um valor
    específico.
 
-Manipulação de Arrays de Objetos com forEach 7. Modificando Objetos em um Array
-○ Objetivo: Crie um array de objetos produtos, onde cada objeto tem nome,
-preco, e desconto. Use forEach para aplicar um desconto de 10% em todos
-os produtos e exibir o novo preço.
+7. Manipulação de Arrays de Objetos com forEach 7. Modificando Objetos em um Array
+   ○ Objetivo: Crie um array de objetos produtos, onde cada objeto tem nome,
+   preco, e desconto. Use forEach para aplicar um desconto de 10% em todos
+   os produtos e exibir o novo preço.
 
 8. Criando Novos Arrays a Partir de Objetos
    ○ Objetivo: Crie um array de objetos filmes, onde cada filme tem titulo,
@@ -47,10 +47,10 @@ os produtos e exibir o novo preço.
    nome, idade, e cidade. Use forEach para contar quantos clientes têm mais
    de 30 anos.
 
-Combinação de Estruturas 10. Criando Relatórios com Objetos e Arrays
-○ Objetivo: Crie um array de objetos vendas, onde cada objeto tem produto,
-quantidade e valor. Use forEach para calcular o valor total de vendas de
-todos os produtos.
+10. Combinação de Estruturas 10. Criando Relatórios com Objetos e Arrays
+    ○ Objetivo: Crie um array de objetos vendas, onde cada objeto tem produto,
+    quantidade e valor. Use forEach para calcular o valor total de vendas de
+    todos os produtos.
 
 11. Agrupando Elementos com forEach
     ○ Objetivo: Crie um array de objetos pedidos, onde cada pedido tem

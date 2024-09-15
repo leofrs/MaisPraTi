@@ -67,7 +67,7 @@ for (const element of pessoas) {
 }
  */
 
-//QUESTÕES 5
+//QUESTÃO 5
 /* const alunos = [
   {
     nome: "José",
@@ -89,3 +89,89 @@ for (const element of alunos) {
 
   console.log(`A média final de ${element.nome} foi: ${notaFinal.nota}`);
 } */
+
+// QUESTÃO 6
+/* const funcionarios = [
+  { nome: "Ana", cargo: "Desenvolvedora", salario: 5000 },
+  { nome: "João", cargo: "Designer", salario: 4000 },
+  { nome: "Maria", cargo: "Gerente", salario: 6000 },
+];
+
+const funcionariosFiltrados = [];
+
+for (const funcionario of funcionarios) {
+  if (funcionario.salario > 5000) {
+    funcionariosFiltrados.push(funcionario);
+  }
+}
+console.log(
+  "Funcionários com salário maior que",
+  5000,
+  ":",
+  funcionariosFiltrados
+); */
+
+//QUESTÃO 7
+/* const produtos = [
+  { nome: "Camiseta", preco: 50, desconto: 0 },
+  { nome: "Calça", preco: 100, desconto: 0 },
+];
+produtos.forEach((produto) => {
+  produto.desconto = 0.1;
+  produto.preco = produto.preco * (1 - produto.desconto);
+});
+console.log("Produtos com desconto aplicado:", produtos); */
+
+//QUESTÃO 8
+/* const filmes = [
+  {
+    titulo: "Matriz",
+    diretor: " Lana Wachowski",
+    anoLancamento: 1999,
+  },
+  {
+    titulo: "O Poderoso Chefão",
+    diretor: "Francis Ford Coppola",
+    anoLancamento: 1972,
+  },
+];
+
+const titulos = [];
+
+filmes.forEach((filme) => {
+  titulos.push(filme.titulo);
+});
+
+console.log("Títulos dos filmes:", titulos); */
+
+//QUESTÃO 9
+/* const clientes = [
+  { nome: "Lucas", idade: 28, cidade: "São Paulo" },
+  { nome: "Ana", idade: 35, cidade: "Rio de Janeiro" },
+];
+
+let contador = 0;
+
+clientes.forEach((cliente) => {
+  if (cliente.idade > 30) {
+    contador++;
+  }
+});
+
+console.log("Número de clientes com mais de 30 anos:", contador); */
+
+// QUESTÃO 10
+/* const funcionarios = [
+  { nome: "Ana", cargo: "Desenvolvedora", salario: 5000 },
+  { nome: "João", cargo: "Designer", salario: 4000 },
+];
+
+const relatorio = funcionarios.map((funcionario) => {
+  return {
+    nome: funcionario.nome,
+    cargo: funcionario.cargo,
+    salarioAjustado: funcionario.salario * 1.05,
+  };
+});
+
+console.log("Relatório de Funcionários:", relatorio); */
