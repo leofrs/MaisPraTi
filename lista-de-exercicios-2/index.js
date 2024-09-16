@@ -175,3 +175,88 @@ const relatorio = funcionarios.map((funcionario) => {
 });
 
 console.log("Relatório de Funcionários:", relatorio); */
+
+//QUESTÃO 11
+/* const pedidos = [
+  { cliente: "Ana", produto: "Laptop", quantidade: 1 },
+  { cliente: "Ana", produto: "Mouse", quantidade: 2 },
+  { cliente: "Pedro", produto: "Teclado", quantidade: 7 },
+  { cliente: "Pedro", produto: "Monitor", quantidade: 2 },
+];
+
+const agrupadoPorCliente = {};
+
+pedidos.forEach((pedido) => {
+  if (!agrupadoPorCliente[pedido.cliente]) {
+    agrupadoPorCliente[pedido.cliente] = 0;
+  }
+  agrupadoPorCliente[pedido.cliente] += pedido.quantidade;
+});
+
+console.log(agrupadoPorCliente); */
+
+//QUESTÃO 12
+/* const estoque = [
+  { produto: "Laptop", quantidade: 5, minimo: 10 },
+  { produto: "Mouse", quantidade: 15, minimo: 10 },
+  { produto: "Teclado", quantidade: 8, minimo: 10 },
+];
+
+estoque.forEach((item) => {
+  if (item.quantidade < item.minimo) {
+    item.quantidade *= 2;
+  }
+});
+
+console.log(estoque); */
+
+//QUESTÃO 13
+/* const carrinho = {
+  itens: [
+    { nome: "Laptop", quantidade: 1, precoUnitario: 1000 },
+    { nome: "Mouse", quantidade: 2, precoUnitario: 50 },
+    { nome: "Teclado", quantidade: 1, precoUnitario: 80 },
+  ],
+};
+
+let total = 0;
+
+carrinho.itens.forEach((item) => {
+  total += item.quantidade * item.precoUnitario;
+});
+
+console.log(`Valor total do carrinho: R$${total}`); */
+
+//QUESTÃO 14
+/* const empresa = {
+  departamentos: [
+    {
+      nome: "TI",
+      funcionarios: ["Carlos", "Ana", "João"],
+    },
+    {
+      nome: "Marketing",
+      funcionarios: ["Laura", "Pedro"],
+    },
+  ],
+};
+
+for (const departamento of empresa.departamentos) {
+  console.log(`Departamento: ${departamento.nome}`);
+  for (const funcionario of departamento.funcionarios) {
+    console.log(`- ${funcionario}`);
+  }
+} */
+
+// QUESTÃO 15
+/* const despesas = [
+  { categoria: "Alimentação", valor: 200 },
+  { categoria: "Transporte", valor: 100 },
+  { categoria: "Alimentação", valor: 150 },
+];
+
+const totalAlimentacao = despesas
+  .filter((despesa) => despesa.categoria === "Alimentação")
+  .reduce((total, despesa) => total + despesa.valor, 0);
+
+console.log(`Total gasto em Alimentação: R$${totalAlimentacao}`); */
