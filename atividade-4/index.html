@@ -1,27 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>LP - moderna</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="logo.png" alt="Logo da Empresa" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LP - moderna</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container_logo">
+        <img src="./assets/images/logo.svg" alt="Logo image" />
+      </div>
+
+      <nav class="container_menu">
+        <ul>
+          <li>Home</li>
+          <li>Sobre</li>
+          <li>Cursos</li>
+          <li>Blog</li>
+          <li>Contato</li>
+        </ul>
+      </nav>
+
+      <div class="container_btn">
+        <button type="button">Teste Gratuitamente</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section_one">
+        <div class="title">
+          <h1>O melhor programa para se inscrever para intercâmbio</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum modi
+            in, doloremque delectus, inventore, voluptate quia.
+          </p>
+          <button type="button">Faça o teste</button>
+        </div>
+
+        <div class="image">
+          <img
+            src="./assets/images/hero-banner-1.jpg"
+            width="270"
+            height="300"
+            alt="hero banner"
+            class="img-cover"
+          />
+        </div>
+      </section>
+
+      <section class="section_two">
+        <p class="section_subtitle">Categories</p>
+
+        <h2 class="section-title">
+          Online <span class="span">Classes</span> For Remote Learning.
+        </h2>
+
+        <p class="section-text">
+          Consectetur adipiscing elit sed do eiusmod tempor.
+        </p>
+
+        <ul class="grid_list">
+          <li>
+            <div class="category-card" style="--color: 170, 75%, 41%">
+              <div class="card-icon">
+                <img
+                  src="./assets/images/category-1.svg"
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                  alt="Online Degree Programs"
+                  class="img"
+                />
+              </div>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Online Degree Programs</a>
+              </h3>
+
+              <p class="card-text">
+                Lorem ipsum dolor consec tur elit adicing sed umod tempor.
+              </p>
+
+              <span class="card-badge">7 Courses</span>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#testemunhos">Testemunhos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-            <div class="cta">
-                <a href="#contato" class="cta-button">Entre em Contato</a>
+          </li>
+
+          <li>
+            <div class="category-card" style="--color: 351, 83%, 61%">
+              <div class="card-icon">
+                <img
+                  src="./assets/images/category-2.svg"
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                  alt="Non-Degree Programs"
+                  class="img"
+                />
+              </div>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Non-Degree Programs</a>
+              </h3>
+
+              <p class="card-text">
+                Lorem ipsum dolor consec tur elit adicing sed umod tempor.
+              </p>
+
+              <span class="card-badge">4 Courses</span>
             </div>
-        </header>
-    </body>
+          </li>
+
+          <li>
+            <div class="category-card" style="--color: 229, 75%, 58%">
+              <div class="card-icon">
+                <img
+                  src="./assets/images/category-3.svg"
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                  alt="Off-Campus Programs"
+                  class="img"
+                />
+              </div>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Off-Campus Programs</a>
+              </h3>
+
+              <p class="card-text">
+                Lorem ipsum dolor consec tur elit adicing sed umod tempor.
+              </p>
+
+              <span class="card-badge">8 Courses</span>
+            </div>
+          </li>
+
+          <li>
+            <div class="category-card" style="--color: 42, 94%, 55%">
+              <div class="card-icon">
+                <img
+                  src="./assets/images/category-4.svg"
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                  alt="Hybrid Distance Programs"
+                  class="img"
+                />
+              </div>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Hybrid Distance Programs</a>
+              </h3>
+
+              <p class="card-text">
+                Lorem ipsum dolor consec tur elit adicing sed umod tempor.
+              </p>
+
+              <span class="card-badge">8 Courses</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section_three"></section>
+
+      <section class="section_four"></section>
+    </main>
+
+    <footer class="footer"></footer>
+  </body>
 </html>
