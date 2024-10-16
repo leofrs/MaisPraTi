@@ -78,7 +78,7 @@ html {
 .first-section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 700px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -92,7 +92,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1; /* Fica abaixo do conteúdo principal */
+  z-index: 1;
 }
 
 .slider::before {
@@ -114,7 +114,7 @@ html {
 .slide {
   min-width: 100%;
   height: 100%;
-  object-fit: cover; /* Faz com que a imagem preencha o espaço */
+  object-fit: cover;
 }
 
 .contentPrincipal {
@@ -131,15 +131,6 @@ html {
   text-transform: uppercase;
   margin-bottom: 1rem;
   font-family: "Indie Flower", cursive;
-}
-
-.contentPrincipal h2 {
-  color: rgb(177, 177, 177);
-  font-size: 3rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-family: "Indie Flower", cursive;
-  margin-bottom: 3rem;
 }
 
 .contentPrincipal a {
@@ -205,7 +196,7 @@ html {
 
 .cardapio {
   width: 100vw;
-  height: 100svh;
+  height: auto;
   background-image: linear-gradient(
       rgba(12, 12, 12, 0.8),
       rgba(15, 15, 15, 0.8)
@@ -214,6 +205,7 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 16px;
 }
 
 .cardapio h2 {
@@ -229,6 +221,7 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 8px;
 }
 
 .itens-cardapio .info {
@@ -341,6 +334,9 @@ footer {
 }
 
 @media (max-width: 1200px) {
+  .first-section {
+    height: 500px;
+  }
   .main {
     display: block;
   }
@@ -442,6 +438,18 @@ footer {
   .contatos-secao div {
     margin: 2rem;
   }
+
+  .img-cozinha img {
+    visibility: hidden;
+  }
+  .main {
+    width: 100%;
+    height: 100%;
+  }
+  .contentsobre {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (max-width: 720px) {
@@ -452,6 +460,15 @@ footer {
 }
 
 @media (max-width: 645px) {
+  .first-section {
+    height: 285px;
+  }
+  .contentPrincipal h1 {
+    font-size: 24px;
+  }
+  .contentPrincipal a {
+    padding: 14px;
+  }
   .sobre-nos img {
     width: 400px;
     margin-left: 10px;
@@ -498,5 +515,25 @@ footer {
   .contentsobre p {
     text-align: center;
     width: 200px;
+  }
+  .first-section {
+    height: 250px;
+  }
+  .contentPrincipal h1 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .contentPrincipal a {
+    padding: 12px;
+  }
+  .img-cozinha img {
+    visibility: hidden;
+  }
+  .main {
+    width: 100%;
+    height: 100%;
+  }
+  .contentsobre h2 {
+    font-size: xx-large;
   }
 }
