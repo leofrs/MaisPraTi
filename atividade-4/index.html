@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu Flutuante</title>
+    <title>Dev Pizzas</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -19,16 +19,15 @@
 
       <nav>
         <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
           <li><a href="#sobre" class="hover:text-yellow-400">Sobre</a></li>
           <li>
             <a href="#cardapio" class="hover:text-yellow-400">Cardapio</a>
           </li>
           <li>
-            <a href="#testimonials" class="hover:text-yellow-400"
-              >Testemunhos</a
-            >
+            <a href="#Testemunho" class="hover:text-yellow-400">Testemunhos</a>
           </li>
-          <li><a href="#contact" class="hover:text-yellow-400">Contato</a></li>
+          <li><a href="#contato" class="hover:text-yellow-400">Contato</a></li>
         </ul>
       </nav>
 
@@ -40,11 +39,11 @@
       </a>
     </header>
 
-    <section class="banner">
+    <section class="banner" id="home">
       <img src="/assets/fundo-pizza.png" alt="Pizza" />
       <div class="overlay"></div>
       <div class="text-overlay">
-        <h1>Dev Pizzaria</h1>
+        <h1>Dev Pizzas!!!</h1>
 
         <div class="flex gap-8">
           <a href="#sobre">Sobre</a>
@@ -54,12 +53,44 @@
     </section>
 
     <section class="sobre" id="sobre">
-      <h1>sobre</h1>
+      <div class="w-full h-20">
+        <h6 class="text-title">Um pouco da nossa historia</h6>
+      </div>
+      <div class="b w-full h-96 flex justify-between">
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          eligendi repellat, culpa adipisci eaque libero? Error impedit omnis
+          optio natus perferendis, placeat necessitatibus sequi odit, officiis
+          velit eaque neque ratione. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Saepe eligendi repellat, culpa adipisci eaque
+          libero? Error impedit omnis optio natus perferendis, placeat
+          necessitatibus sequi odit, officiis velit eaque neque ratione. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Saepe eligendi
+          repellat, culpa adipisci eaque libero? Error impedit omnis optio natus
+          perferendis, placeat necessitatibus sequi odit, officiis velit eaque
+          neque ratione.
+        </p>
+
+        <img src="/assets/cozinha.jpg" alt="cozinha imagem" class="image" />
+      </div>
     </section>
 
     <section class="cardapio" id="cardapio">
-      <h1>cardapio</h1>
+      <div class="itens-cardapio" id="itens-cardapio"></div>
+    </section>
+
+    <section class="testemunho" id="Testemunho">
+      <h1>Testemunho</h1>
+    </section>
+
+    <section class="contato" id="contato">
+      <h1>Contato</h1>
+    </section>
+
+    <section class="footer">
+      <h1>Footer</h1>
     </section>
     <script src="script.js"></script>
+    <script src="pizzas.js"></script>
   </body>
 </html>
