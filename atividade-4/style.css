@@ -78,6 +78,7 @@ html {
 .first-section {
   height: 100vh;
   width: 100vw;
+
   background-image: linear-gradient(
       rgba(29, 29, 29, 0.8),
       rgba(29, 29, 29, 0.8)
@@ -142,12 +143,51 @@ html {
   justify-content: space-between;
 }
 
-.cardapio {
-  width: 100vw;
+.sobre-nos {
+  background-color: #1f1e1f;
+  width: 100%;
+  height: 100svh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentsobre {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.img-cozinha img {
+  width: 400px;
+  height: 400px;
+  margin-top: 10rem;
+  margin-left: 10rem;
+  border-radius: 14px;
+}
+
+.contentsobre h2 {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  font-family: "Indie Flower", cursive;
+}
+
+.contentsobre p {
+  text-align: center;
+  font-size: 1.8rem;
+  width: 600px;
+}
+
+.cardapio {
+  width: 100vw;
+  height: 100svh;
   background-image: linear-gradient(
       rgba(12, 12, 12, 0.8),
       rgba(15, 15, 15, 0.8)
@@ -165,13 +205,12 @@ html {
 }
 
 .itens-cardapio {
-  width: 80%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  align-items: center;
 }
 
 .itens-cardapio .info {
@@ -234,49 +273,6 @@ html {
 .itens-cardapio .info .pedir:hover {
   background-color: #5e5252;
   color: rgb(255, 255, 255);
-}
-
-.sobre-nos {
-  background-color: #1f1e1f;
-  width: 100%;
-  height: calc(100svh - 70px);
-
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contentsobre {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.main {
-  display: flex;
-  justify-content: space-between;
-}
-
-.sobre-nos img {
-  width: 400px;
-  height: 400px;
-  margin-top: 10rem;
-  margin-left: 10rem;
-  border: 2px solid rgb(155, 155, 155);
-}
-
-.contentsobre h2 {
-  font-size: 6rem;
-  margin-bottom: 1rem;
-  font-family: "Indie Flower", cursive;
-}
-
-.contentsobre p {
-  text-align: center;
-  font-size: 1.8rem;
-  width: 600px;
 }
 
 .contatos {
