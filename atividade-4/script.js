@@ -1,10 +1,17 @@
-let show = true;
-const menuContent = document.querySelector(".content");
-const menuToggle = menuContent.querySelector(".menu-toggle");
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelector(".slides");
+  const slideImages = document.querySelectorAll(".slide");
+  let index = 0;
 
-menuToggle.addEventListener("click", () => {
-  document.body.style.overflow = show ? "hidden" : "initial";
+  function showNextSlide() {
+    index++;
+    if (index >= slideImages.length) {
+      index = 0; // Reinicia o índice se passar do número de imagens
+    }
+    const offset = -index * 100; // Calcula o deslocamento em porcentagem
+    slides.style.transform = `translateX(${offset}%)`;
+  }
 
-  menuContent.classList.toggle("on", show);
-  show = !show;
+  // Chama a função a cada 2 segundos
+  setInterval(showNextSlide, 2000);
 });
