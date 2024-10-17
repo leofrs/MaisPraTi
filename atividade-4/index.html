@@ -3,296 +3,464 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev Pizzas</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "3yTOqJ7AYe1REorbO",
+      });
+    })();
+    </script>
+    <title>Dev Pizzas</title>
   </head>
   <body>
-    <header class="menu">
-      <div class="flex items-center">
-        <img src="/assets/logo.png" alt="Logo da Empresa XYZ" class="h-12" />
-        Dev Pizzas
-      </div>
-
-      <nav>
-        <ul class="flex space-x-6">
-          <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
-          <li><a href="#sobre" class="hover:text-yellow-400">Sobre</a></li>
-          <li>
-            <a href="#cardapio" class="hover:text-yellow-400">Cardapio</a>
-          </li>
-          <li>
-            <a href="#testemunho" class="hover:text-yellow-400">Testemunhos</a>
-          </li>
-          <li><a href="#contato" class="hover:text-yellow-400">Contato</a></li>
-        </ul>
-      </nav>
-
-      <a
-        href="#contact"
-        class="btn-header text-black py-2 px-4 rounded transition duration-200"
+    <!-- Header -->
+    <header class="rounded-md shadow shadow-black max-w-[1200px] mx-auto px-4">
+      <nav
+        class="flex flex-col lg:flex-row gap-4 lg:gap-8 justify-between items-center"
       >
-        Entre em Contato
-      </a>
+        <div class="w-[120px] h-[80px]">
+          <img
+            src="/assets/logo.png"
+            alt="logo"
+            class="w-[100px] h-full object-contain"
+          />
+        </div>
+
+        <ul
+          class="flex flex-wrap justify-center w-full lg:flex-row gap-4 lg:gap-10"
+          id="nav-links"
+        >
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#testemunhas">Testemunhas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+
+        <div class="hidden lg:block">
+          <button class="btn">Entre em contato</button>
+        </div>
+      </nav>
     </header>
 
-    <section class="banner" id="home">
-      <img src="/assets/fundo-pizza.png" alt="Pizza" />
-      <div class="overlay"></div>
-      <div class="text-overlay">
-        <h1>Dev Pizzas!!!</h1>
-
-        <div class="flex gap-8">
-          <a href="#sobre">Sobre</a>
-          <a href="#cardapio">Cardápio</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="sobre" id="sobre">
-      <div class="w-full h-20">
-        <h6 class="text-title">Um pouco da nossa historia</h6>
-      </div>
-      <div class="b w-full h-96 flex justify-between">
-        <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-          eligendi repellat, culpa adipisci eaque libero? Error impedit omnis
-          optio natus perferendis, placeat necessitatibus sequi odit, officiis
-          velit eaque neque ratione. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Saepe eligendi repellat, culpa adipisci eaque
-          libero? Error impedit omnis optio natus perferendis, placeat
-          necessitatibus sequi odit, officiis velit eaque neque ratione. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Saepe eligendi
-          repellat, culpa adipisci eaque libero? Error impedit omnis optio natus
-          perferendis, placeat necessitatibus sequi odit, officiis velit eaque
-          neque ratione.
+    <!-- Banner -->
+    <section
+      class="max-w-[1200px] mx-auto px-4 py-20 flex h-[600px] max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:gap-8"
+      id="home"
+    >
+      <div class="mb-4 max-lg:text-center">
+        <h1
+          class="mb-4 text-5xl font-bold leading-[4.5rem] text-left max-lg:text-center"
+        >
+          Reuna-se, coma & curta o
+          <span class="text-[#fc7f09]">verdadeiro sabor</span>
+        </h1>
+        <p class="text-left text-gray-400 max-lg:text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex
+          accusantium consectetur illum quasi atque voluptate recusandae
+          nesciunt tempora rerum sunt ducimus nobis eum sequi quibusdam eveniet
+          voluptatibus, fuga deleniti.
         </p>
+      </div>
 
-        <img src="/assets/cozinha.jpg" alt="cozinha imagem" class="image" />
+      <div class="flex justify-center md:hidden">
+        <button class="btn">
+          <a href="#sobre">Saiba mais</a>
+        </button>
+      </div>
+
+      <div class="max-w-[600px] mx-auto max-lg:hidden">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/assets/banner1.jpeg" alt="Serviço 1" class="h-[400px]"/>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/banner2.jpeg" alt="Serviço 2" class="h-[400px]"/>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/banner3.jpeg" alt="Serviço 3" class="h-[400px]"/>
+            </div>   
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+    </section>
+
+    <!-- Sobre -->
+    <section
+      class="max-w-[1200px] mx-auto px-4 py-20 flex h-auto max-lg:flex-col max-lg:items-center max-lg:gap-8"
+      id="sobre"
+    >
+      <div
+        class="section__container chef__container flex flex-col lg:flex-row gap-8 items-center"
+      >
+        <div class="chef__image max-w-[400px] mx-auto lg:w-1/2">
+          <img src="assets/chef.png" alt="chef" class="object-cover w-full" />
+        </div>
+
+        <div class="chef__content lg:w-1/2 text-left lg:text-left">
+          <h2 class="mb-4 text-4xl font-bold leading-[3rem] max-lg:text-center">
+            Temos os melhores pizzaiolos da região
+          </h2>
+          <p class="leading-7 text-[#6b7280] mb-6 mt-6 max-lg:text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            veritatis omnis eveniet labore veniam, perferendis ipsa officia
+            libero, culpa deserunt eaque architecto alias laudantium nesciunt ut
+            temporibus error eos. Sed!
+          </p>
+          <ul class="chef__list space-y-4">
+            <li class="flex items-center">
+              <span><i class="ri-checkbox-fill mr-2"></i></span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+              fuga laudantium
+            </li>
+            <li class="flex items-center">
+              <span><i class="ri-checkbox-fill mr-2"></i></span>
+              officia non veritatis doloribus repudiandae quis dicta,
+              voluptatibus
+            </li>
+            <li class="flex items-center">
+              <span><i class="ri-checkbox-fill mr-2"></i></span>
+              consectetur perferendis quaerat optio aliquid, accusamus
+              aspernatur accusantium, iure officiis magnam!
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section class="cardapio" id="cardapio">
-      <div class="itens-cardapio" id="itens-cardapio"></div>
-    </section>
+    <!-- Cardápio -->
+    <section
+      class="max-w-[1200px] mx-auto px-4 py-20 flex flex-col h-auto"
+      id="cardapio"
+    >
+      <h2 class="mb-4 text-4xl font-bold leading-[3rem] text-center">
+        As pizzas mais pedidas
+      </h2>
+      <p class="text-center leading-7 text-[#6b7280] mb-8">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, ad
+        ducimus incidunt quibusdam mollitia blanditiis quidem!
+      </p>
 
-    <section class="py-12 bg-[#1F1911]" id="testemunho">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-8 text-white">
-          O que os nossos clientes falam?
-        </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-gray-100 p-6 rounded-lg shadow-md" data-aos="fade-up">
-            <div class="flex items-center mb-4">
-              <div>
-                <h4 class="font-bold">Jonny</h4>
-                <p class="text-gray-600">Cliente desde 2019</p>
-              </div>
-            </div>
-            <p>
-              "Eles fazem as melhores pizzas da região e sou cliente fiel desde
-              2019. Recomendo de coração"
-            </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 special__grid"
+      >
+        <div class="special__card">
+          <img
+            src="assets/Strogonoff.png"
+            alt="special"
+            class="object-cover w-full rounded-lg"
+          />
+          <h4 class="mt-4 text-xl font-semibold">Strogonoff</h4>
+          <p class="mt-2 text-gray-600">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            maxime, voluptate at alias nobis accusamus est temporibus nihil
+          </p>
+          <div class="special__ratings flex mt-4">
+            <span><i class="ri-star-fill text-yellow-500 mr-1"></i></span>
+            <span><i class="ri-star-fill text-yellow-500 mr-1"></i></span>
+            <span><i class="ri-star-fill text-yellow-500 mr-1"></i></span>
+            <span><i class="ri-star-fill text-yellow-500 mr-1"></i></span>
+            <span><i class="ri-star-fill text-yellow-500"></i></span>
           </div>
-
-          <div
-            class="bg-gray-100 p-6 rounded-lg shadow-md"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="flex items-center mb-4">
-              <div>
-                <h4 class="font-bold">Carol</h4>
-                <p class="text-gray-600">Cliente desde 2021</p>
-              </div>
-            </div>
-            <p>"As melhores pizzas? Isso é verdade e recomendo a todos"</p>
+          <div class="special__footer mt-4 flex justify-between items-center">
+            <p class="price font-bold text-lg">R$ 60,00</p>
+            <button class="btn">Saiba mais</button>
           </div>
+        </div>
 
-          <div
-            class="bg-gray-100 p-6 rounded-lg shadow-md"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="flex items-center mb-4">
-              <div>
-                <h4 class="font-bold">Jake</h4>
-                <p class="text-gray-600">Cliente desde 2020</p>
-              </div>
-            </div>
-            <p>
-              "Nunca diminuiu a qualidade, pelo contrário. Aumento ela cada vez
-              mais, parabéns"
-            </p>
+        <div class="special__card">
+          <img
+            src="assets/Sensacao.png"
+            alt="special"
+            class="object-cover w-full rounded-lg"
+          />
+          <h4 class="mt-4 text-xl font-semibold">Sensação</h4>
+          <p class="mt-2 text-gray-600">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            maxime, voluptate at alias nobis accusamus est temporibus nihil
+          </p>
+          <div class="special__ratings flex mt-4">
+            <span><i class="ri-star-fill text-yellow-500 mr-1"></i></span>
+            <span><i class="ri-star-fill text-yellow-500 mr-1"></i></span>
+            <span><i class="ri-star-fill text-yellow-500 mr-1"></i></span>
+            <span><i class="ri-star-fill text-yellow-500 mr-1"></i></span>
+            <span><i class="ri-star-fill text-yellow-500"></i></span>
+          </div>
+          <div class="special__footer mt-4 flex justify-between items-center">
+            <p class="price font-bold text-lg">R$ 60,00</p>
+            <button class="btn">Saiba mais</button>
+          </div>
+        </div>
+
+        <div class="special__card">
+          <img
+            src="assets/Portuguesa.png"
+            alt="special"
+            class="object-cover w-full rounded-lg"
+          />
+          <h4 class="mt-4 text-xl font-semibold">Portuguesa</h4>
+          <p class="mt-2 text-gray-600">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            maxime, voluptate at alias nobis accusamus est temporibus nihil
+          </p>
+          <div class="special__ratings flex mt-4">
+            <span><i class="ri-star-fill text-yellow-500 mr-1"></i></span>
+            <span><i class="ri-star-fill text-yellow-500 mr-1"></i></span>
+            <span><i class="ri-star-fill text-yellow-500 mr-1"></i></span>
+            <span><i class="ri-star-fill text-yellow-500 mr-1"></i></span>
+            <span><i class="ri-star-fill text-yellow-500"></i></span>
+          </div>
+          <div class="special__footer mt-4 flex justify-between items-center">
+            <p class="price font-bold text-lg">R$ 60,00</p>
+            <button class="btn">Saiba mais</button>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="cardapio h-screen" id="contato">
-      <div
-        class="bg-[#DDDDDD] shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-lg"
-      >
-        <h2 class="text-2xl font-bold mb-6 text-center">Entre em contato</h2>
+    <!-- Testemunhas -->
+    <section
+      class="max-w-[1200px] mx-auto px-4 py-20 flex flex-col h-auto"
+      id="testemunhas"
+    >
+      <h2 class="mb-4 text-4xl font-bold leading-[3rem] text-center">
+        O que os nossos clientes falam?
+      </h2>
+      <p class="text-center leading-7 text-[#6b7280]">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit et nobis
+        deleniti iure non ullam, inventore eius accusamus beatae, enim a
+        accusantium voluptatem tempore repudiandae fuga! Et magnam nisi iusto.
+      </p>
+      <div class="client__swiper border border-red-700">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="client__card">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quidem, ducimus, ex dolores placeat nam fugit quae temporibus
+                  voluptates culpa tempora vitae eligendi perspiciatis? Ullam,
+                  fuga maxime temporibus nihil voluptatibus debitiss.
+                </p>
+                <img src="assets/client-1.jpg" alt="client" />
+                <h4>David</h4>
+                <h5>Cliente desde 2019</h5>
+              </div>
+            </div>
 
-        <form id="contact-form" class="space-y-4">
+            <div class="swiper-slide">
+              <div class="client__card">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quidem, ducimus, ex dolores placeat nam fugit quae temporibus
+                  voluptates culpa tempora vitae eligendi perspiciatis? Ullam,
+                  fuga maxime temporibus nihil voluptatibus debitiss.
+                </p>
+                <img src="assets/client-2.jpg" alt="client" />
+                <h4>Emily</h4>
+                <h5>Cliente desde 2020</h5>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="client__card">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quidem, ducimus, ex dolores placeat nam fugit quae temporibus
+                  voluptates culpa tempora vitae eligendi perspiciatis? Ullam,
+                  fuga maxime temporibus nihil voluptatibus debitiss.
+                </p>
+                <img src="assets/client-3.jpg" alt="client" />
+                <h4>Micael</h4>
+                <h5>Clinte desde 2021</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="bg-[#FFFFFF] flex items-center justify-center h-screen" id="contato">
+      <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h1 class="text-2xl font-bold text-gray-800 mb-6">Entre em contato</h1>
+        <form id="contactForm" class="max-w-[600px] mx-auto space-y-6">
           <div>
-            <label class="block text-gray-700 text-sm font-bold mb-2" for="name"
-              >Nome</label
-            >
+            <label for="name" class="block mb-2 font-semibold">Nome:</label>
             <input
-              id="name"
-              name="name"
               type="text"
-              placeholder="Insira o seu nome"
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="name"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md"
+              required
             />
-            <p id="name-error" class="text-red-500 text-xs hidden">
-              Nome é obrigatorio
-            </p>
           </div>
-
           <div>
-            <label
-              class="block text-gray-700 text-sm font-bold mb-2"
-              for="email"
-              >Email</label
-            >
+            <label for="email" class="block mb-2 font-semibold">Email:</label>
             <input
-              id="email"
-              name="email"
               type="email"
-              placeholder="Insira seu email"
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="email"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md"
+              required
             />
-            <p id="email-error" class="text-red-500 text-xs hidden">
-              Insira um email válido
-            </p>
           </div>
-
           <div>
-            <label
-              class="block text-gray-700 text-sm font-bold mb-2"
-              for="phone"
-              >Telefone</label
-            >
+            <label for="phone" class="block mb-2 font-semibold">Telefone:</label>
             <input
-              id="phone"
-              name="phone"
               type="tel"
-              placeholder="Insira seu telefone"
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="phone"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md"
+              
+              required
             />
-            <p id="phone-error" class="text-red-500 text-xs hidden">
-              Telefone é obrigatorio
-            </p>
           </div>
-
           <div>
-            <label
-              class="block text-gray-700 text-sm font-bold mb-2"
-              for="message"
-              >Mensagem</label
-            >
+            <label for="message" class="block mb-2 font-semibold">Mensagem:</label>
             <textarea
               id="message"
-              name="message"
-              placeholder="Insira sua mensagem"
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32"
+              rows="5"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md"
+              required
             ></textarea>
-            <p id="message-error" class="text-red-500 text-xs hidden">
-              Mensagem é obrigatorio
-            </p>
           </div>
-
-          <div class="flex items-center justify-between">
+          <div>
             <button
               type="submit"
-              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              class="btn w-full bg-[#fc7f09] text-white font-semibold py-2 rounded-md"
             >
-              Enviar
+              Enviar Mensagem
             </button>
           </div>
         </form>
-
-        <p id="form-success" class="text-green-500 text-xs hidden">
-          Sua menssagem foi enviada com sucesso
-        </p>
-        <p id="form-fail" class="text-red-500 text-xs hidden">
-          Falha ao enviar a mensagem. Tente novamente
-        </p>
       </div>
     </section>
 
-    <section class="footer">
-      <footer class="bg-[#1F1911] text-white w-full py-6">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-          <div class="flex space-x-6">
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              class="hover:text-blue-500"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.125v-3.624h3.125v-2.672c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.462.099 2.793.143v3.238h-1.916c-1.503 0-1.794.715-1.794 1.761v2.318h3.587l-.467 3.623h-3.12v9.295h6.116c.731 0 1.324-.593 1.324-1.325v-21.35c0-.732-.593-1.325-1.324-1.325z"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              class="hover:text-blue-400"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M24 4.557c-.883.392-1.83.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.194-.897-.957-2.178-1.555-3.594-1.555-2.717 0-4.92 2.203-4.92 4.917 0 .386.044.762.128 1.124-4.09-.205-7.72-2.165-10.148-5.144-.424.729-.666 1.574-.666 2.476 0 1.708.869 3.216 2.19 4.099-.807-.026-1.566-.247-2.23-.616v.062c0 2.385 1.698 4.374 3.95 4.827-.413.112-.848.171-1.296.171-.317 0-.626-.03-.927-.086.627 1.956 2.445 3.379 4.6 3.419-1.685 1.32-3.808 2.106-6.115 2.106-.398 0-.79-.023-1.175-.068 2.179 1.397 4.768 2.211 7.548 2.211 9.056 0 14.01-7.504 14.01-14.01 0-.213-.004-.426-.014-.637.961-.694 1.797-1.56 2.457-2.548z"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              class="hover:text-blue-600"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M22.225 0h-20.451c-.977 0-1.774.796-1.774 1.774v20.451c0 .978.796 1.775 1.774 1.775h20.451c.978 0 1.775-.797 1.775-1.775v-20.451c0-.978-.797-1.774-1.775-1.774zm-14.77 20.451h-3.451v-11.451h3.451v11.451zm-1.725-13.059c-1.102 0-1.996-.896-1.996-1.996 0-1.101.895-1.996 1.996-1.996s1.996.895 1.996 1.996c0 1.1-.894 1.996-1.996 1.996zm13.496 13.059h-3.451v-5.996c0-1.43-.025-3.27-1.993-3.27-1.995 0-2.3 1.556-2.3 3.164v6.102h-3.451v-11.451h3.316v1.564h.046c.461-.874 1.586-1.794 3.27-1.794 3.497 0 4.142 2.302 4.142 5.293v6.388z"
-                />
-              </svg>
+    <!-- Footer -->
+    <footer
+      class="footer bg-white text-white border border-top pt-4"
+      id="contact"
+    >
+      <div
+        class="max-w-[1200px] mx-auto px-4 section__container footer__container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+      >
+        <div class="footer__col">
+          <div class="logo footer__logo text-3xl font-bold">
+            <a href="#" class="text-black">
+              Dev<span class="text-[#fc7f09]">Pizzas</span>
             </a>
           </div>
-
-          <div class="flex space-x-6">
-            <a href="#" class="hover:underline">Termos de uso</a>
-            <a href="#" class="hover:underline">Politica de privacidade</a>
-          </div>
+          <p class="section__description mt-4 text-gray-400">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed eaque
+            id doloribus ipsum molestiae iste nobis reprehenderit expedita
+            aliquam labore culpa qui consequuntur, deleniti quia hic fuga
+            debitis, adipisci consectetur!
+          </p>
         </div>
-      </footer>
-    </section>
 
-    <script src="script.js"></script>
-    <script src="pizzas.js"></script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <div class="footer__col">
+          <h4 class="text-xl font-semibold mb-4">Serviços</h4>
+          <ul class="footer__links space-y-2">
+            <li>
+              <a href="#" class="text-gray-400 hover:text-[#fc7f09]">Menu</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-[#fc7f09]"
+                >Cardápio</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="text-xl font-semibold mb-4">Informações</h4>
+          <ul class="footer__links space-y-2">
+            <li>
+              <a href="#" class="text-gray-400 hover:text-[#fc7f09]"
+                >Sobre nós</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-[#fc7f09]">Contato</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-[#fc7f09]"
+                >Informações nutricionais</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-[#fc7f09]"
+                >Informações alérgicas</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="text-xl font-semibold mb-4">Empresa</h4>
+          <ul class="footer__links space-y-2">
+            <li>
+              <a href="#" class="text-gray-400 hover:text-[#fc7f09]"
+                >Nossa história</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-[#fc7f09]"
+                >Termos de Serviço</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-[#fc7f09]"
+                >Política de privacidade</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bar bg-gray-900 text-center py-4 mt-8">
+        <p class="text-gray-400">&copy; 2024 Leonardo Santos</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="form.js"></script>
+    <script src="swiper.js"></script>
     <script>
-      AOS.init();
+       function sendEmail(name, email, phone, message) {
+    emailjs.send("service_zgtj9za", "template_aqblhxs", {
+      from_name: name,
+      from_email: email,
+      phone: phone,
+      message: message,
+    })
+    .then(function (response) {
+      alert("Mensagem enviada com sucesso!");
+      document.getElementById("contactForm").reset();
+    }, function (error) {
+      alert("Ocorreu um erro ao enviar a mensagem, tente novamente.");
+      console.log("Erro:", error);
+    });
+  }
     </script>
   </body>
 </html>
