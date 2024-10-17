@@ -79,9 +79,9 @@ function renderPizzas() {
     h3.innerText = pizza.nome;
 
     pizza.fatias.forEach((fatia) => {
-      const h4 = document.createElement("h4");
-      h4.innerHTML = `${fatia.seis} fatias <span>${fatia.preco}</span>`;
-      infoDiv.appendChild(h4);
+      const p = document.createElement("p");
+      p.innerHTML = `${fatia.seis} fatias <span>${fatia.preco}</span>`;
+      infoDiv.appendChild(p);
     });
 
     const button = document.createElement("button");

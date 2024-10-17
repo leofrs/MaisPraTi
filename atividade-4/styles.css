@@ -130,8 +130,8 @@ body {
   width: 100%;
   height: auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   background-image: linear-gradient(
       rgba(12, 12, 12, 0.8),
       rgba(15, 15, 15, 0.8)
@@ -172,20 +172,15 @@ body {
   text-decoration: underline;
 }
 
-.itens-cardapio .info h4 {
+.itens-cardapio .info p {
   font-size: 1.4rem;
   text-transform: uppercase;
   margin-bottom: 0.6rem;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: 150px 150px;
-  margin-left: 6rem;
 }
 
-.itens-cardapio .info h4 span {
+.itens-cardapio .info p span {
   font-size: 1.6rem;
-  color: #585858;
+  color: #ff0000;
   margin-left: 1.5rem;
   text-decoration: underline;
 }
@@ -196,7 +191,7 @@ body {
 }
 
 .itens-cardapio img {
-  width: 100%;
+  width: 300px;
   height: 200px;
 }
 
