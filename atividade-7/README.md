@@ -23,13 +23,18 @@ Para conseguir testar cada página é bem simples. Vá até a pasta src e procur
 2. Entre na pasta da atividade:
 
     ```bash
-    cd atividade-5
+    cd atividade-7
     ```
 
-3. Inicie o servidor:
+3. Instale as dependências:
 
     ```bash
-    Utilize a extensão Live Server do VS Code
+    Utilize npm ou yarn comando, npm install ou yarn install
+    ```
+
+4. Inicie o servidor de desenvolvimento:
+    ```bash
+    npm run dev ou yarn dev
     ```
 
 ## Licença
